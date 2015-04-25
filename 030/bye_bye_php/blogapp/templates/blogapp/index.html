@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+</head>
+<body>
+	{% for post in posts %}
+		<h2><a>{{post.title}} </a><small> - {{post.author}}</small></h2>
+		<p>{{post.brief}}</p>
+	{% endfor %}
+</body>
+</html>
