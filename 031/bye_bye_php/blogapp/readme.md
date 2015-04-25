@@ -20,3 +20,5 @@ if you face error that blogapp_author doesn't exist.
 	python manage.py makemigrations blogapp
 
 	python manage.py migrate
+
+	from blogapp.models import *
