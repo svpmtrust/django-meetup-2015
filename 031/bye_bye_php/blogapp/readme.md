@@ -17,6 +17,13 @@ Lets add a url with a parameter in the app , also link it inside a template.
 Now to the url : http://localhost:8000/blogapp/
 
 if you face error that blogapp_author doesn't exist.
+
 	python manage.py makemigrations blogapp
 
 	python manage.py migrate
+
+To play with shell run
+	
+	python manage.py shell
+
+	from blogapp.models import *
